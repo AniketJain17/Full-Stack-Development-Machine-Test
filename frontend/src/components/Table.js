@@ -2,17 +2,19 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./table.css";
 import axios from "axios";
+import gear from "../assests/img/gear.png";
+import cross from "../assests/img/cross.png";
 
-const bootstrap =
-  "https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/bootstrap.jpg";
-const angular =
-  "https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/angular.jpg";
-const sketch =
-  "https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/sketch.jpg";
-const react =
-  "https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/react.jpg";
-const vue =
-  "https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/vue.jpg";
+const Michael =
+  "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg";
+const Wilson =
+  "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600";
+const Mary =
+  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww";
+const martin =
+  "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600";
+const somer =
+  "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600";
 
 const Table = () => {
   const navigate = useNavigate();
@@ -37,19 +39,20 @@ const Table = () => {
           <div className="row mt-5">
             <div className="col">
               <div className="card bg-default shadow">
-                <div className="card-header bg-transparent border-0">
-                  <h3 className="text-white mb-0">Card tables</h3>
+                <div className="card-header  border-0">
+                  <h3 className="text-black mb-0">Card tables</h3>
                 </div>
                 <div className="table-responsive">
-                  <table className="table align-items-center table-dark table-flush">
-                    <thead className="thead-dark">
+                  <table className="table align-items-center table-flush">
+                    <thead>
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Date Created</th>
-                        <th scope="col">User</th>
+                        <th scope="col">Role</th>
                         <th scope="col">Status</th>
                         <th scope="col">Progress</th>
+                        <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -58,67 +61,18 @@ const Table = () => {
                         <th scope="row">
                           <div className="media align-items-center">
                             <a href="/" className="avatar rounded-circle mr-3">
-                              <img src={bootstrap} alt="img1" />
+                              <img src={Michael} alt="img1" />
                             </a>
                             <div className="media-body">
-                              <span className="mb-0 text-sm">
-                                Michael Holz
-                              </span>
+                              <span className="mb-0 text-sm">Michael Holz</span>
                             </div>
                           </div>
                         </th>
                         <td>04/10/2013</td>
-                        
+
                         <td>
                           <div className="avatar-group">
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Ryan Tompson"
-                            >
-                              <img
-                                src={bootstrap}
-                                alt="img2"
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Romina Hadid"
-                            >
-                              <img
-                                src={react}
-                                alt="img3"
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Alexander Smith"
-                            >
-                              <img
-                                src={vue}
-                                alt="img4"
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Jessica Doe"
-                            >
-                              <img
-                                alt="img5"
-                                src={angular}
-                                className="rounded-circle"
-                              />
-                            </a>
+                            <span className="mb-0 text-sm">Admin</span>
                           </div>
                         </td>
                         <td>
@@ -144,73 +98,36 @@ const Table = () => {
                             </div>
                           </div>
                         </td>
+                        <td>
+                          <div className="d-flex align-items-center">
+                            <span className="rounded-circle ">
+                              <img src={gear} alt="img1" />
+                            </span>
+                            <span className="rounded-circle ">
+                              <img src={cross} alt="img1" />
+                            </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                       <td>2</td>
+                        <td>2</td>
                         <th scope="row">
                           <div className="media align-items-center">
                             <a href="/" className="avatar rounded-circle mr-3">
-                              <img alt="img6" src={angular} />
+                              <img alt="img6" src={Wilson} />
                             </a>
                             <div className="media-body">
                               <span className="mb-0 text-sm">
-                                Paula Wilson
+                                Anotnio Wilson
                               </span>
                             </div>
                           </div>
                         </th>
                         <td>05/08/2014</td>
-                        
+
                         <td>
                           <div className="avatar-group">
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Ryan Tompson"
-                            >
-                              <img
-                                alt="img11"
-                                src={bootstrap}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Romina Hadid"
-                            >
-                              <img
-                                alt="img12"
-                                src={react}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Alexander Smith"
-                            >
-                              <img
-                                alt="img13"
-                                src={vue}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Jessica Doe"
-                            >
-                              <img
-                                alt="img14"
-                                src={angular}
-                                className="rounded-circle"
-                              />
-                            </a>
+                            <span className="mb-0 text-sm">Publisher</span>
                           </div>
                         </td>
 
@@ -237,73 +154,34 @@ const Table = () => {
                             </div>
                           </div>
                         </td>
+                        <td>
+                          <div className="d-flex align-items-center">
+                            <span className="rounded-circle ">
+                              <img src={gear} alt="img1" />
+                            </span>
+                            <span className="rounded-circle ">
+                              <img src={cross} alt="img1" />
+                            </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                       <td>3</td>
+                        <td>3</td>
                         <th scope="row">
                           <div className="media align-items-center">
                             <a href="/" className="avatar rounded-circle mr-3">
-                              <img alt="img8" src={sketch} />
+                              <img alt="img8" src={Mary} />
                             </a>
                             <div className="media-body">
-                              <span className="mb-0 text-sm">
-                                Antonio Moreno
-                              </span>
+                              <span className="mb-0 text-sm">Mary Moreno</span>
                             </div>
                           </div>
                         </th>
                         <td>11/05/2015</td>
-                        
+
                         <td>
                           <div className="avatar-group">
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Ryan Tompson"
-                            >
-                              <img
-                                alt="img21"
-                                src={bootstrap}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Romina Hadid"
-                            >
-                              <img
-                                alt="img22"
-                                src={react}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Alexander Smith"
-                            >
-                              <img
-                                alt="img23"
-                                src={vue}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Jessica Doe"
-                            >
-                              <img
-                                alt="img24"
-                                src={angular}
-                                className="rounded-circle"
-                              />
-                            </a>
+                            <span className="mb-0 text-sm">Publisher</span>
                           </div>
                         </td>
 
@@ -330,73 +208,34 @@ const Table = () => {
                             </div>
                           </div>
                         </td>
+                        <td>
+                          <div className="d-flex align-items-center">
+                            <span className="rounded-circle ">
+                              <img src={gear} alt="img1" />
+                            </span>
+                            <span className="rounded-circle ">
+                              <img src={cross} alt="img1" />
+                            </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                       <td>4</td>
+                        <td>4</td>
                         <th scope="row">
                           <div className="media align-items-center">
                             <a href="/" className="avatar rounded-circle mr-3">
-                              <img alt="img9" src={react} />
+                              <img alt="img9" src={martin} />
                             </a>
                             <div className="media-body">
-                              <span className="mb-0 text-sm">
-                                Mary Saveley
-                              </span>
+                              <span className="mb-0 text-sm">Mary Saveley</span>
                             </div>
                           </div>
                         </th>
                         <td>06/09/2016</td>
-                        
+
                         <td>
                           <div className="avatar-group">
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Ryan Tompson"
-                            >
-                              <img
-                                alt="img31"
-                                src={bootstrap}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Romina Hadid"
-                            >
-                              <img
-                                alt="img32"
-                                src={react}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Alexander Smith"
-                            >
-                              <img
-                                alt="img33"
-                                src={vue}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Jessica Doe"
-                            >
-                              <img
-                                alt="img34"
-                                src={angular}
-                                className="rounded-circle"
-                              />
-                            </a>
+                            <span className="mb-0 text-sm">Reviewer</span>
                           </div>
                         </td>
                         <td>
@@ -422,13 +261,23 @@ const Table = () => {
                             </div>
                           </div>
                         </td>
+                        <td>
+                          <div className="d-flex align-items-center">
+                            <span className="rounded-circle ">
+                              <img src={gear} alt="img1" />
+                            </span>
+                            <span className="rounded-circle ">
+                              <img src={cross} alt="img1" />
+                            </span>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td>5</td> 
+                        <td>5</td>
                         <th scope="row">
                           <div className="media align-items-center">
                             <a href="/" className="avatar rounded-circle mr-3">
-                              <img src={vue} alt="img9" />
+                              <img src={somer} alt="img9" />
                             </a>
                             <div className="media-body">
                               <span className="mb-0 text-sm">
@@ -438,57 +287,10 @@ const Table = () => {
                           </div>
                         </th>
                         <td>12/08/2017</td>
-                        
+
                         <td>
                           <div className="avatar-group">
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Ryan Tompson"
-                            >
-                              <img
-                                alt="img41"
-                                src={bootstrap}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Romina Hadid"
-                            >
-                              <img
-                                alt="img42"
-                                src={react}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Alexander Smith"
-                            >
-                              <img
-                                alt="img43"
-                                src={vue}
-                                className="rounded-circle"
-                              />
-                            </a>
-                            <a
-                              href="/"
-                              className="avatar avatar-sm"
-                              data-toggle="tooltip"
-                              data-original-title="Jessica Doe"
-                            >
-                              <img
-                                alt="img44"
-                                src={angular}
-                                className="rounded-circle"
-                              />
-                            </a>
+                            <span className="mb-0 text-sm">Moderator</span>
                           </div>
                         </td>
                         <td>
@@ -512,6 +314,16 @@ const Table = () => {
                                 ></div>
                               </div>
                             </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div className="d-flex align-items-center">
+                            <span className="rounded-circle ">
+                              <img src={gear} alt="img1" />
+                            </span>
+                            <span className="rounded-circle ">
+                              <img src={cross} alt="img1" />
+                            </span>
                           </div>
                         </td>
                       </tr>

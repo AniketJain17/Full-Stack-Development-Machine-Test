@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<SignUp />} />
+        <Route exact path="/" element={<SingIn />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/table" element={<Table />} />
         </Route>

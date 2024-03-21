@@ -98,10 +98,9 @@ const SingIn = () => {
           </div>
         </div>
         <p>
-          New member <a href="/">Register.</a>
+          New member <a href="/sign-up">Register.</a>
         </p>
         <div className="d-flex justify-content-center">
-        
           <button
             type="submit"
             className="submit-btn btn"

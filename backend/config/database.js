@@ -6,9 +6,6 @@ const connectDatabase = () => {
     console.log(`Database server connected at port: ${data.connection.port}`);
     console.log(`Database server connected at host: ${data.connection.host}`);
   });
-  // .catch((err) => {
-  //   console.log(err);
-  // });
 };
 
 module.exports = connectDatabase;

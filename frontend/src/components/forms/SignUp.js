@@ -50,18 +50,22 @@ const SignUp = () => {
 
     const config = { headers: { "Content-Type": "application/json" } };
     try {
-      const {data} = await axios
-      .post("/api/v1/register", myForm, config);
+      const { data } = await axios.post("/api/v1/register", myForm, config);
       localStorage.setItem("User", JSON.stringify(data.user));
-        navigate("/table");
-    }
-    catch (error) {
-      if(error.response) alert(error.response.data.error);
+      navigate("/table");
+    } catch (error) {
+      if (error.response) alert(error.response.data.error);
     }
   };
 
   return (
-    <form style={{"width":"400px", "margin":"5px", "box-shadow":"0 4px 2px -2px gray" }}> 
+    <form
+      style={{
+        width: "400px",
+        margin: "5px",
+        "box-shadow": "0 4px 2px -2px gray",
+      }}
+    >
       <div className="top">
         <div className="heading">
           <h3>SIGN UP</h3>
